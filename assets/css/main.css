@@ -287,8 +287,104 @@ button {
   line-height: 150%;
 }
 
-.main {
-  margin: 0;
+.main .main_content .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  position: relative;
+}
+.main .main_content .hero__title {
+  max-width: 645px;
+  border-radius: 8px;
+  border: 1px solid var(--white-95, #F1F1F3);
+  background: var(--white-99, #FCFCFD);
+  color: #1A1A1A;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 150%;
+  padding: 12px 24px 12px 12px;
+  margin: 0 0 16px 0;
+}
+.main .main_content .hero__title--img {
+  border-radius: 6px;
+  background: var(--orange-95, #FFF4E5);
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.main .main_content .hero__title .hero_title--orange {
+  color: #FF9500;
+}
+.main .main_content .hero .hero__title--element {
+  position: absolute;
+  top: 50px;
+  left: 290px;
+}
+.main .main_content .hero__subtitle {
+  color: var(--grey-15, #262626);
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 150%;
+  margin-bottom: 6px;
+}
+.main .main_content .hero__text {
+  color: #262626;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  margin-bottom: 50px;
+}
+.main .main_content .hero__btn_group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.main .main_content .hero__btn_group .hero__btn_1 {
+  text-align: center;
+  font-size: 14px;
+  background-color: #FF9500;
+  color: #FFF;
+  font-weight: 600;
+  padding: 14px 20px;
+  border-radius: 6px;
+}
+.main .main_content .hero__btn_group .hero__btn_2 {
+  text-align: center;
+  font-size: 14px;
+  padding: 14px 20px;
+  background-color: #FFF;
+  border: 1px solid #F1F1F3;
+  color: #262626;
+  font-weight: 500;
+  border-radius: 6px;
+}
+.main .main_content .companies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  border-radius: 8px;
+  border: 1px solid #F1F1F3;
+  background: #FCFCFD;
+  max-width: 1232px;
+  margin-bottom: 80px;
+}
+.main .main_content .companies .companies__logo {
+  padding: 20px 30px;
+  border-right: 1px solid #F1F1F3;
+  min-width: 175px;
+  height: 68px;
+}
+.main .main_content .companies .companies__logo--border {
+  border: none;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -305,7 +401,7 @@ button {
     border-radius: 8px;
   }
   .header .header_top__banner .header_top__text {
-    font-size: 14px;
+    font-size: 18px;
   }
   .header .header_top__banner .header_top__image {
     width: 24px;
@@ -332,6 +428,57 @@ button {
     padding: 13px 33px;
     border-radius: 8px;
     font-size: 18px;
+  }
+  .main .main_content .hero {
+    padding-top: 100px;
+  }
+  .main .main_content .hero__title {
+    max-width: 857px;
+    border-radius: 11px;
+    font-size: 48px;
+    padding: 14px 30px 14px 20px;
+    margin: 0 0 20px 0;
+  }
+  .main .main_content .hero__title--img {
+    padding: 14px;
+    width: 62px;
+    height: 62px;
+  }
+  .main .main_content .hero .hero__title--element {
+    position: absolute;
+    top: 70px;
+    left: 340px;
+    width: 39px;
+    height: 43px;
+  }
+  .main .main_content .hero__subtitle {
+    font-size: 38px;
+    margin-bottom: 10px;
+  }
+  .main .main_content .hero__text {
+    font-size: 18px;
+    margin-bottom: 60px;
+  }
+  .main .main_content .hero__btn_group .hero__btn_1 {
+    font-size: 18px;
+    padding: 18px 24px;
+    border-radius: 8px;
+  }
+  .main .main_content .hero__btn_group .hero__btn_2 {
+    font-size: 18px;
+    padding: 18px 24px;
+    border-radius: 10px;
+  }
+  .main .main_content .companies {
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 1596px;
+    margin-bottom: 100px;
+  }
+  .main .main_content .companies .companies__logo {
+    padding: 30px 40px;
+    min-width: 220px;
+    height: 92px;
   }
   .footer {
     background-color: #FFF;
@@ -428,6 +575,45 @@ button {
   }
   .header .header_navbar .header_navbar__content .header_navbar__right .header_navbar__menu {
     display: block;
+  }
+  .main .main_content .hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .main .main_content .hero__title {
+    max-width: 358px;
+    font-size: 16px;
+    padding: 14px 14px 14px 14px;
+    margin: 0 0 16px 0;
+  }
+  .main .main_content .hero .hero__title--element {
+    position: absolute;
+    top: 30px;
+    left: 7px;
+    width: 39px;
+    height: 43px;
+  }
+  .main .main_content .hero__subtitle {
+    font-size: 24px;
+  }
+  .main .main_content .hero__text {
+    font-size: 14px;
+    width: 297px;
+  }
+  .main .main_content .companies {
+    padding: 10px;
+    max-width: 358px;
+    margin-bottom: 30px;
+  }
+  .main .main_content .companies .companies__logo {
+    min-width: 112px;
+    height: 64px;
+  }
+  .main .main_content .companies .companies__logo--none {
+    display: none;
+  }
+  .main .main_content .companies .companies__logo--borde {
+    border: none;
   }
   .footer {
     background-color: #FFF;

@@ -14,7 +14,7 @@
             max-width: 1860px;
             border-radius: 8px;
             .header_top__text{
-                font-size: 14px;
+                font-size: 18px;
             }
             .header_top__image{
                 width: 24px;
@@ -54,8 +54,66 @@
             }
         }
     }
-
+    .main{
+        .main_content{
+            .hero{
+                padding-top: 100px;
+                &__title{
+                    max-width: 857px;
+                    border-radius: 11px;
+                    font-size: 48px;
+                    padding: 14px 30px 14px 20px;
+                    margin: 0 0 20px 0;
+                    &--img{
+                        padding: 14px;
+                        width: 62px;
+                        height: 62px;
+                    }
+                }
+                .hero__title--element{
+                    position: absolute;
+                    top: 70px;
+                    left: 340px;
+                    width: 39px;
+                    height: 43px;
+                }
+                &__subtitle{
+                    font-size: 38px;
+                    margin-bottom: 10px;
+                }
+                &__text{
+                    font-size: 18px;
+                    margin-bottom: 60px;
+                }
+                &__btn_group{
+                    .hero__btn_1{
+                        font-size: 18px;
+                        padding: 18px 24px;
+                        border-radius: 8px;
+                    }
+                    .hero__btn_2{
+                        font-size: 18px;
+                        padding: 18px 24px;
+                        border-radius: 10px;
+                    }
+                }
     
+    
+            }
+            .companies{
+                padding: 30px;
+                border-radius: 12px;
+                max-width: 1596px;
+                margin-bottom: 100px;
+                .companies__logo{
+                    padding: 30px 40px;
+                    min-width: 220px;
+                    height: 92px;
+                }
+            }
+
+        }
+    }
     .footer{
         background-color: #FFF;
         padding-top: 100px;
@@ -167,9 +225,50 @@
             }
         }
     }
-
-
-
+    // style.css sho'tta
+.main{
+    .main_content{
+        .hero{
+            padding-top: 50px;
+            padding-bottom: 50px;
+            &__title{
+                max-width: 358px;
+                font-size: 16px;
+                padding: 14px 14px 14px 14px;
+                margin: 0 0 16px 0;
+            }
+            .hero__title--element{
+                position: absolute;
+                top: 30px;
+                left: 7px;
+                width: 39px;
+                height: 43px;
+            }
+            &__subtitle{
+                font-size: 24px;
+            }
+            &__text{
+                font-size: 14px;
+                width: 297px;
+            }
+        }
+        .companies{
+            padding: 10px;
+            max-width: 358px;
+            margin-bottom: 30px;
+            .companies__logo{
+                min-width: 112px;
+                height: 64px;
+                &--none{
+                    display: none;
+                }
+                &--borde{
+                    border: none;
+                }
+            }
+        }
+    }
+}
     .footer{
         background-color: #FFF;
         padding-top: 50px;
