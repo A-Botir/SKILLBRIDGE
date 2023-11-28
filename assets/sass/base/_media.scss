@@ -1,0 +1,104 @@
+@media only screen and (min-width: 1920px){
+    // Desktop
+    .container {
+        max-width: 1920px;
+        width: 1597px;
+    }
+
+    .header{
+        p{
+            font-size: 18px;
+        }
+        .header_top__banner{
+            padding: 14px 0;
+            max-width: 1860px;
+            border-radius: 8px;
+            .header_top__text{
+                font-size: 14px;
+            }
+            .header_top__image{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    
+        .header_navbar{
+            margin-top: 20px;
+            margin-bottom: 24px;
+            .header_navbar__content{
+                .header_navbar__left{
+                    .header_navbar__logo{
+                        padding: 7px;
+                        width: 55px;
+                        height: 55px;
+                    }
+                    .header_navbar__list{
+                        .header_navbar__link{
+                            font-size: 18px;
+                            padding: 14px 24px;
+                            border-radius: 8px;
+                        }
+                        
+                    }
+                }
+                .header_navbar__right{
+                    .header_navbar__click{
+                        font-size: 18px;
+                    }
+                    .header_navbar__btn{
+                        padding: 13px 33px;
+                        border-radius: 8px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    // Mobile
+    .container {
+        max-width: 390px;
+        width: 358px;
+    }
+
+    .header{
+        margin-top: 40px;
+        .header_top__banner{
+            @include dFlex( space-between, center);
+            padding: 10px 16px;
+            gap: 0;
+            max-width: 358px;
+        }
+        .header_navbar{
+            margin-top: 14px;
+            margin-bottom: 14px;
+            .header_navbar__content{
+                .header_navbar__left{
+                    .header_navbar__logo{
+                        border-radius: 6px;
+                        padding: 5.19px;
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .header_navbar__list{
+                        display: none;
+                    }
+                }
+                .header_navbar__right{
+                    gap: 20px;
+                    .header_navbar__click{
+                        margin-right: 0;
+                    }
+                    .header_navbar__btn{
+                        padding: 11px 19px;
+                    }
+                    .header_navbar__menu{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

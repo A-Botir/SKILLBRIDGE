@@ -1,0 +1,88 @@
+.header{
+    margin-top: 20px;
+    .header_top__banner{
+        @include dFlex;
+        padding: 10px 0;
+        gap: 23px;
+        max-width: 1400px;
+        width: 100%;
+        margin: auto;
+        background-color: #FF9500;
+        border-radius: 6px;
+        .header_top__text{
+            color: var(--absolute-white, #FFF);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+        }
+        .header_top__image{
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .header_navbar{
+        margin-top: 16px;
+        margin-bottom: 20px;
+        .header_navbar__content{
+            @include dFlex( space-between, center);
+            .header_navbar__left{
+                @include dFlex;
+                gap: 50px;
+                .header_navbar__logo{
+                    border-radius: 8px;
+                    padding: 5.7px;
+                    background: var(--orange-50, #FF9500);
+                    width: 45px;
+                    height: 45px;
+                    vertical-align: middle
+                }
+                .header_navbar__list{
+                    @include dFlex;
+                    .header_navbar__link{
+                        font-size: 14px;
+                        color: #262626;
+                        font-weight: 400;
+                        line-height: 150%;
+                        padding: 12px 20px;
+                        border-radius: 6px;
+                        &--check{
+                            background: var(--white-95, #F1F1F3);
+                        }
+                    }
+                    
+                }
+            }
+            .header_navbar__right{
+                @include dFlex;
+                gap: 30px;
+                .header_navbar__click{
+                    color: var(--grey-15, #262626);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 150%;
+                }
+                .header_navbar__btn{
+                    padding: 11px 23px;
+                    border-radius: 6px;
+                    border: 1px solid #FF9500;
+                    background: var(--orange-50, #FF9500);
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 150%;
+                    transition: all 0.5s ease;
+                    &:hover{
+                        background-color: #F7F7F8;
+                        color: #FF9500;
+                    }
+                }
+                .header_navbar__menu{
+                    display: none;
+                    cursor: pointer;
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+        }
+    }
+}
