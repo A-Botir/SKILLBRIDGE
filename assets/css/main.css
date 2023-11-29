@@ -457,11 +457,15 @@ button {
   flex-wrap: wrap;
 }
 .main .main_content .benefits_card__container .benefits_card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   padding: 40px;
   max-width: 413px;
   min-height: 370px;
   max-height: 371px;
   border-radius: 10px;
+  box-sizing: border-box;
   background: var(--absolute-white, #FFF);
 }
 .main .main_content .benefits_card__container .benefits_card__title {
@@ -470,7 +474,7 @@ button {
   font-size: 60px;
   font-weight: 700;
   line-height: 24px;
-  margin-bottom: 40px;
+  height: 60px;
 }
 .main .main_content .benefits_card__container .benefits_card__subtitle {
   color: #333;
@@ -486,20 +490,137 @@ button {
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
-  margin-bottom: 40px;
   width: 333px;
 }
-.main .main_content .benefits_card__container .benefits_card .benefits_card__btn {
-  display: flex;
-  justify-content: right;
-  align-items: center;
+.main .main_content .benefits_card__container .benefits_card__btn {
+  display: block;
   padding: 14px;
   border-radius: 6px;
   border: 1px solid var(--white-95, #F1F1F3);
   background: var(--white-99, #FCFCFD);
   width: 54px;
   height: 54px;
-  margin-right: 278px;
+  margin-right: 0;
+  margin-left: auto;
+}
+.main .main_content .our_courses .courses__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 60px;
+}
+.main .main_content .our_courses .courses__top .courses__text .courses__title {
+  color: var(--grey-15, #262626);
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 4px;
+}
+.main .main_content .our_courses .courses__top .courses__text .courses__subtitle {
+  color: var(--grey-35, #59595A);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  width: 933px;
+}
+.main .main_content .our_courses .courses__top .courses__btn {
+  color: var(--grey-15, #262626);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 14px 20px;
+  border-radius: 6px;
+  border: 1px solid var(--white-95, #F1F1F3);
+  background: var(--white-99, #FCFCFD);
+}
+.main .main_content .our_courses .courses_card__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.main .main_content .our_courses .courses_card__container .courses_card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  border: 1px solid var(--white-95, #F1F1F3);
+  background: var(--absolute-white, #FFF);
+  padding: 40px;
+  max-width: 630px;
+  min-height: 613px;
+}
+.main .main_content .our_courses .courses_card__container .courses_card .courses_card__image {
+  border-radius: 8px;
+  width: 550px;
+  height: 266px;
+  overflow: hidden;
+}
+.main .main_content .our_courses .courses_card__container .courses_card .courses_card__image .courses_card__img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .main_content .our_courses .courses_card__container .courses_card .courses_card__content .courses_card__group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.main .main_content .our_courses .courses_card__container .courses_card .courses_card__content .courses_card__group .courses_card__text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main .main_content .our_courses .courses_card__container .courses_card .courses_card__content .courses_card__group .courses_card__text--pad {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: 1px solid var(--white-95, #F1F1F3);
+  background: var(--absolute-white, #FFF);
+  color: var(--grey-30, #4C4C4D);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+.main .main_content .our_courses .courses_card__container .courses_card .courses_card__content .courses_card__group--name {
+  color: var(--grey-15, #262626);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.main .main_content .our_courses .courses_card__container .courses_card .courses_card__content .courses_card__title {
+  margin-bottom: 10px;
+  color: var(--grey-15, #262626);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+}
+.main .main_content .our_courses .courses_card__container .courses_card .courses_card__content .courses_card__subtitle {
+  color: var(--grey-30, #4C4C4D);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+.main .main_content .our_courses .courses_card__container .courses_card .courses_card_link {
+  width: 100%;
+}
+.main .main_content .our_courses .courses_card__container .courses_card .courses_card_link .courses_card__button {
+  width: 100%;
+  padding: 14px 24px;
+  border-radius: 6px;
+  border: 1px solid var(--white-95, #F1F1F3);
+  background: var(--white-97, #F7F7F8);
+  color: var(--grey-15, #262626);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
 }
 
 @media only screen and (min-width: 1920px) {
@@ -639,7 +760,7 @@ button {
   }
   .main .main_content .benefits_card__container .benefits_card__title {
     font-size: 80px;
-    margin-bottom: 50px;
+    height: 80px;
   }
   .main .main_content .benefits_card__container .benefits_card__subtitle {
     font-size: 24px;
@@ -648,7 +769,6 @@ button {
   }
   .main .main_content .benefits_card__container .benefits_card__text {
     font-size: 18px;
-    margin-bottom: 50px;
     width: 419px;
   }
   .main .main_content .benefits_card__container .benefits_card .benefits_card__btn {
@@ -656,7 +776,6 @@ button {
     border-radius: 8px;
     width: 74px;
     height: 74px;
-    margin-left: 345px;
   }
   .footer {
     background-color: #FFF;
@@ -842,18 +961,16 @@ button {
   }
   .main .main_content .benefits_card__container .benefits_card__title {
     font-size: 50px;
-    margin-bottom: 30px;
+    height: 50px;
   }
   .main .main_content .benefits_card__container .benefits_card__subtitle {
     font-size: 20px;
     width: 298px;
+    margin-bottom: 10px;
   }
   .main .main_content .benefits_card__container .benefits_card__text {
     font-size: 14px;
     width: 298px;
-  }
-  .main .main_content .benefits_card__container .benefits_card .benefits_card__btn {
-    margin-left: 244px;
   }
   .footer {
     background-color: #FFF;

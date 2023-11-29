@@ -159,7 +159,7 @@
                         border-radius: 12px;
                         &__title{
                             font-size: 80px;
-                            margin-bottom: 50px;
+                            height: 80px;
                         }
                         &__subtitle{
                             font-size: 24px;
@@ -168,7 +168,6 @@
                         }
                         &__text{
                             font-size: 18px;
-                            margin-bottom: 50px;
                             width: 419px;
                         }
                         .benefits_card__btn{
@@ -176,7 +175,6 @@
                             border-radius: 8px;
                             width: 74px;
                             height: 74px;
-                            margin-left: 345px;
                         }
                     }
                 }
@@ -385,22 +383,21 @@
                     }
                     &__title{
                         font-size: 50px;
-                        margin-bottom: 30px;
+                        height: 50px;
                     }
                     &__subtitle{
                         font-size: 20px;
                         width: 298px;
+                        margin-bottom: 10px;
                     }
                     &__text{
                         font-size: 14px;
                         width: 298px;
                     }
-                    .benefits_card__btn{
-                        margin-left: 244px;
-                    }
                 }
             }
         }
+        
     }
 }
     .footer{
