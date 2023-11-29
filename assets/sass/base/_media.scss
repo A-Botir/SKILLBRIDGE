@@ -129,6 +129,58 @@
                     }
                 }
             }
+            .benefits{
+                &__top{
+                    margin-bottom: 80px;
+                    .benefits__text{
+                        .benefits__title{
+                            font-size: 48px;
+                            margin-bottom: 4px;
+                        }
+                        .benefits__subtitle{
+                            width: 1177px;
+                            font-size: 18px;
+                        }
+                    }
+                    .benefits__btn{
+                        font-size: 18px;
+                        padding: 18px 24px;
+                        border-radius: 8px;
+                    }
+    
+                }
+                &_card__container{
+                    flex-wrap: wrap;
+                    .benefits_card{
+                        padding: 60px;
+                        max-width: 519px;
+                        min-height: 437px;
+                        max-height: 438px;
+                        border-radius: 12px;
+                        &__title{
+                            font-size: 80px;
+                            margin-bottom: 50px;
+                        }
+                        &__subtitle{
+                            font-size: 24px;
+                            width: 419px;
+                            margin-bottom: 14px;
+                        }
+                        &__text{
+                            font-size: 18px;
+                            margin-bottom: 50px;
+                            width: 419px;
+                        }
+                        .benefits_card__btn{
+                            padding: 20px;
+                            border-radius: 8px;
+                            width: 74px;
+                            height: 74px;
+                            margin-left: 345px;
+                        }
+                    }
+                }
+            }
         }
     }
     .footer{
@@ -285,6 +337,7 @@
             }
         }
         .video{
+            margin-bottom: 50px;
             .video__group{
                 border: none;
                 .video__image{
@@ -295,6 +348,55 @@
                         top: 96px;
                         left: 151px;
                         right: 0;
+                    }
+                }
+            }
+        }
+        .benefits{
+            margin-bottom: 50px;
+            &__top{
+                margin-bottom: 40px;
+                flex-direction: column;
+                gap: 20px;
+                .benefits__text{
+                    .benefits__title{
+                        font-size: 28px;
+                    }
+                    .benefits__subtitle{
+                        width: 358px;
+                        font-size: 14x;
+                    }
+                }
+                .benefits__btn{
+                    font-size: 14px;
+                }
+
+            }
+            &_card__container{
+                gap: 20px;
+                flex-wrap: wrap;
+                .benefits_card{
+                    padding: 30px;
+                    max-width: 358px;
+                    min-height: 293px;
+                    max-height: 294px;
+                    &--none{
+                        display: none;
+                    }
+                    &__title{
+                        font-size: 50px;
+                        margin-bottom: 30px;
+                    }
+                    &__subtitle{
+                        font-size: 20px;
+                        width: 298px;
+                    }
+                    &__text{
+                        font-size: 14px;
+                        width: 298px;
+                    }
+                    .benefits_card__btn{
+                        margin-left: 244px;
                     }
                 }
             }
