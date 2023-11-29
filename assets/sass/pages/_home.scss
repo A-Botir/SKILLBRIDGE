@@ -211,10 +211,12 @@
             }
         }
         .our_courses{
+            margin-bottom: 100px;
             .courses__top{
                 @include dFlex( space-between, end);
                 margin-bottom: 60px;
                 .courses__text{
+                    max-width: 933px;
                     .courses__title{
                         color: var(--grey-15, #262626);
                         font-size: 38px;
@@ -227,7 +229,6 @@
                         font-size: 16px;
                         font-weight: 400;
                         line-height: 150%;
-                        width: 933px;
                     }
                 }
                 .courses__btn{
@@ -324,5 +325,249 @@
                 }
             }
         }
+        .testimonials{
+            margin-bottom: 100px;
+            &__top{
+                @include dFlex( space-between, end);
+                margin-bottom: 60px;
+                .testimonials__text{
+                    max-width: 933px;
+                    .testimonials__title{
+                        color: var(--grey-15, #262626);
+                        font-size: 38px;
+                        font-weight: 600;
+                        line-height: 150%;
+                        margin-bottom: 4px;
+                    }
+                    .testimonials__subtitle{
+                        color: var(--grey-35, #59595A);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+                }
+                .testimonials__btn{
+                    color: var(--grey-15, #262626);
+                    text-align: center;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 150%;
+                    padding: 14px 20px;
+                    border-radius: 6px;
+                    border: 1px solid var(--white-95, #F1F1F3);
+                    background: var(--white-99, #FCFCFD);
+                }
+            }
+            &_card__container{
+                @include dFlex;
+                flex-wrap: wrap;
+                gap: 20px;
+                .testimonials_card{
+                    max-width: 630px;
+                    min-height: 250px;
+                    border-radius: 10px;
+                    border: 1px solid var(--white-95, #F1F1F3);
+                    background: var(--absolute-white, #FFF);
+                    &__text {
+                        padding: 40px;
+                        border-bottom: 1px solid #F7F7F8;
+                        color: var(--grey-30, #4C4C4D);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+                    &__bott {
+                        @include dFlex( space-between, center);
+                        padding: 24px 40px;
+                        .testimonials_card__group{
+                            @include dFlex;
+                            gap: 10px;
+                            .testimonials_card__avatar{
+                                width: 50px;
+                                height: 50px;
+                                border-radius: 6px;
+                                object-fit: cover;
+                            }
+                            .testimonials_card__name{
+                                color: var(--grey-20, #333);
+                                font-size: 16px;
+                                font-weight: 600;
+                                line-height: 150%;
+                            }
+                        }
+                        .testimonials_card__btn{
+                            padding: 14px 16px;
+                            border-radius: 6px;
+                            border: 1px solid var(--white-95, #F1F1F3);
+                            background: var(--white-97, #F7F7F8);
+                            color: var(--grey-15, #262626);
+                            text-align: center;
+                            font-size: 14px;
+                            font-weight: 500;
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+        }
+        .our_pricing{
+            margin-bottom: 100px;
+            .pricing__top{
+                @include dFlex( space-between, end);
+                margin-bottom: 60px;
+                .pricing__text{
+                    max-width: 809px;
+                    .pricing__title{
+                        color: var(--grey-15, #262626);
+                        font-size: 38px;
+                        font-weight: 600;
+                        line-height: 150%;
+                        margin-bottom: 4px;
+                    }
+                    .pricing__subtitle{
+                        color: var(--grey-35, #59595A);
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 150%;
+                    }
+                }
+                .pricing__btn_group{
+                    @include dFlex;
+                    padding: 12px;
+                    border-radius: 8px;
+                    background: var(--absolute-white, #FFF);
+                    .pricing__btn{
+                        border-radius: 6px;
+                        padding: 12px 24px;
+                        color: var(--grey-30, #4C4C4D);
+                        font-size: 14px;
+                        font-weight: 500;
+                        line-height: 150%;
+                        &--orange{
+                            color: #FFF;
+                            background-color: #FF9500;
+                        }
+                    }
+                }
+            }
+            .pricing_card__container{
+                @include dFlex;
+                flex-wrap: wrap;
+                gap: 30px;
+                border-radius: 12px;
+                background-color: #FFF;
+                padding: 50px;
+                .pricing_card{
+                    @include dFlex;
+                    flex-direction: column;
+                    gap: 50px;
+                    max-width: 582px;
+                    padding: 40px 24px 24px 24px;
+                    border-radius: 12px;
+                    border: 1px solid var(--white-95, #F1F1F3);
+                    background: var(--white-99, #FCFCFD);
+                    &__title {
+                        text-align: center;
+                        padding: 10px 22px;
+                        width: 100%;
+                        border-radius: 4px;
+                        border: 1px solid var(--orange-90, #FFEACC);
+                        background: var(--orange-97, #FFF9F0);
+                        color: var(--grey-15, #262626);
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 169%;
+                    }
+                    .pricing_card__price {
+                        color: var(--grey-30, #4C4C4D);
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 73%; 
+                        &--big{
+                            color: var(--grey-15, #262626);
+                            font-size: 60px;
+                            font-weight: 600;
+                            line-height: 73%;
+                        }
+                    }
+                    .pricing_form{
+                        border-radius: 14px;
+                        border: 1px solid var(--white-95, #F1F1F3);
+                        background: var(--absolute-white, #FFF);
+                        &__content{
+                            padding: 30px;
+                            .pricing_form__title{
+                                color: var(--grey-15, #262626);
+                                text-align: center;
+                                font-size: 18px;
+                                font-weight: 500;
+                                line-height: 150%;
+                                margin-bottom: 24px
+                                ;
+                            }
+                            .pricing_form__labels{
+                                @include dFlex( left, center);
+                                flex-direction: column;
+                                gap: 20px;
+                                padding: 0 30px;
+                                .pricing_form__label{
+                                    width: 100%;
+                                    display: block;
+                                    padding: 12px;
+                                    border-radius: 6px;
+                                    border: 1px solid var(--white-95, #F1F1F3);
+                                    cursor: pointer;
+                                    .pricing_form__text{
+                                        color: var(--grey-30, #4C4C4D);
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                        line-height: 150%;
+                                    }
+
+                                    .pricing_form__checkbox {
+                                        display: none;
+                                        &:not(:checked) + span::before {
+                                            content: "❌";
+                                            background-color: #FFF;
+                                            margin-right: 8px;
+                                            padding: 4px;
+                                            border-radius: 4px;
+                                            max-width: 24px;
+                                            max-height: 24px;
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                        &:checked + span::before {
+                                            content: "✔";
+                                            background-color: #FFF4E5;
+                                            margin-right: 8px;
+                                            padding: 4px 5.4px;
+                                            border-radius: 4px;
+                                            max-width: 24px;
+                                            max-height: 24px;
+                                            width: 100%;
+                                            height: 100%;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                        .pricing_form__btn{
+                            width: 100%;
+                            padding: 18px 24px;
+                            border-radius: 0px 0px 8px 8px;
+                            background-color: #FF9500;
+                            color: var(--absolute-white, #FFF);
+                            text-align: center;
+                            font-size: 14px;
+                            font-weight: 600;
+                            line-height: 150%;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
