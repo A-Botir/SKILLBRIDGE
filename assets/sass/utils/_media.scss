@@ -294,6 +294,85 @@
                     }
                 }
             }
+            .our_pricing{
+                margin-bottom: 150px;
+                .pricing__top{
+                    margin-bottom: 80px;
+                    .pricing__text{
+                        max-width: 1025px;
+                        .pricing__title{
+                            font-size: 48px;
+                            margin-bottom: 6px;
+                        }
+                        .pricing__subtitle{
+                            font-size: 18px;
+                        }
+                    }
+                    .pricing__btn_group{
+                        .pricing__btn{
+                            padding: 14px 30px;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .pricing_card__container{
+                    padding: 80px;
+                    .pricing_card{
+                        max-width: 704px;
+                        padding: 50px 30px 30px 30px;
+                        &__title {
+                            border-radius: 6px;
+                            font-size: 22px;
+                        }
+                        .pricing_card__price {
+                            font-size: 20px;
+                            &--big{
+                                font-size: 80px;
+                            }
+                        }
+                        .pricing_form{
+                            &__content{
+                                padding: 40px;
+                                .pricing_form__title{
+                                    font-size: 20px;
+                                    margin-bottom: 30px;
+                                }
+                                .pricing_form__labels{
+                                    .pricing_form__label{
+                                        padding: 14px;
+                                        border-radius: 8px;
+                                        .pricing_form__text{
+                                            font-size: 18px;
+                                        }
+                                        .pricing_form__checkbox {
+                                            display: none;
+                                            &:not(:checked) + span::before {
+                                                margin-right: 12px;
+                                                padding: 6px;
+                                                border-radius: 6px;
+                                                max-width: 32px;
+                                                max-height: 32px;
+                                            }
+                                            &:checked + span::before {
+                                                margin-right: 12px;
+                                                padding: 6px 7.8px;
+                                                border-radius: 6px;
+                                                max-width: 32px;
+                                                max-height: 32px;
+                                            }
+                                        }
+    
+                                    }
+                                }
+                            }
+                            .pricing_form__btn{
+                                padding: 20px 24px;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .footer{

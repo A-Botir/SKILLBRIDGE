@@ -672,6 +672,7 @@ button {
   gap: 20px;
 }
 .main .main_content .testimonials_card__container .testimonials_card {
+  box-sizing: border-box;
   max-width: 630px;
   min-height: 250px;
   border-radius: 10px;
@@ -783,6 +784,7 @@ button {
   align-items: center;
   flex-direction: column;
   gap: 50px;
+  box-sizing: border-box;
   max-width: 582px;
   padding: 40px 24px 24px 24px;
   border-radius: 12px;
@@ -1149,6 +1151,78 @@ button {
   .main .main_content .testimonials_card__container .testimonials_card__bott .testimonials_card__btn {
     padding: 18px 24px;
     border-radius: 8px;
+    font-size: 18px;
+  }
+  .main .main_content .our_pricing {
+    margin-bottom: 150px;
+  }
+  .main .main_content .our_pricing .pricing__top {
+    margin-bottom: 80px;
+  }
+  .main .main_content .our_pricing .pricing__top .pricing__text {
+    max-width: 1025px;
+  }
+  .main .main_content .our_pricing .pricing__top .pricing__text .pricing__title {
+    font-size: 48px;
+    margin-bottom: 6px;
+  }
+  .main .main_content .our_pricing .pricing__top .pricing__text .pricing__subtitle {
+    font-size: 18px;
+  }
+  .main .main_content .our_pricing .pricing__top .pricing__btn_group .pricing__btn {
+    padding: 14px 30px;
+    font-size: 18px;
+  }
+  .main .main_content .our_pricing .pricing_card__container {
+    padding: 80px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card {
+    max-width: 704px;
+    padding: 50px 30px 30px 30px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card__title {
+    border-radius: 6px;
+    font-size: 22px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card .pricing_card__price {
+    font-size: 20px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card .pricing_card__price--big {
+    font-size: 80px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card .pricing_form__content {
+    padding: 40px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card .pricing_form__content .pricing_form__title {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card .pricing_form__content .pricing_form__labels .pricing_form__label {
+    padding: 14px;
+    border-radius: 8px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card .pricing_form__content .pricing_form__labels .pricing_form__label .pricing_form__text {
+    font-size: 18px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card .pricing_form__content .pricing_form__labels .pricing_form__label .pricing_form__checkbox {
+    display: none;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card .pricing_form__content .pricing_form__labels .pricing_form__label .pricing_form__checkbox:not(:checked) + span::before {
+    margin-right: 12px;
+    padding: 6px;
+    border-radius: 6px;
+    max-width: 32px;
+    max-height: 32px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card .pricing_form__content .pricing_form__labels .pricing_form__label .pricing_form__checkbox:checked + span::before {
+    margin-right: 12px;
+    padding: 6px 7.8px;
+    border-radius: 6px;
+    max-width: 32px;
+    max-height: 32px;
+  }
+  .main .main_content .our_pricing .pricing_card__container .pricing_card .pricing_form .pricing_form__btn {
+    padding: 20px 24px;
     font-size: 18px;
   }
   .footer {

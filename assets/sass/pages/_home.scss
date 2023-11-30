@@ -363,6 +363,7 @@
                 flex-wrap: wrap;
                 gap: 20px;
                 .testimonials_card{
+                    box-sizing: border-box;
                     max-width: 630px;
                     min-height: 250px;
                     border-radius: 10px;
@@ -461,6 +462,7 @@
                     @include dFlex;
                     flex-direction: column;
                     gap: 50px;
+                    box-sizing: border-box;
                     max-width: 582px;
                     padding: 40px 24px 24px 24px;
                     border-radius: 12px;
